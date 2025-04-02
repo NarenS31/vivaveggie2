@@ -5,8 +5,8 @@ import { dirname, join } from 'path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-// Run next dev command
-const nextDev = spawn('npx', ['next', 'dev'], {
+// Run next dev command with turbopack for faster development
+const nextDev = spawn('npx', ['next', 'dev', '--turbo'], {
   stdio: 'inherit',
   cwd: __dirname,
   env: {
