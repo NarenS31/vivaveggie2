@@ -1,5 +1,7 @@
+'use client';
+
 import { create } from 'zustand';
-import { persist } from 'zustand/middleware';
+import { devtools } from 'zustand/middleware';
 import { CartItem, MenuItem, CheckoutFormData } from '@/types';
 import { calculateTax } from '@/lib/utils';
 
@@ -36,7 +38,7 @@ interface CartState {
 }
 
 export const useCartStore = create<CartState>()(
-  persist(
+  devtools(
     (set, get) => ({
       items: [],
       isOpen: false,
@@ -47,32 +49,30 @@ export const useCartStore = create<CartState>()(
       
       addToCart: (item: MenuItem) => {
         const { items } = get();
-        const existingItem = items.find((cartItem) => cartItem.id === item.id);
+        const existingItem = items.find(cartItem => cartItem.id === item.id);
         
         if (existingItem) {
           set({
-            items: items.map((cartItem) => 
+            items: items.map(cartItem => 
               cartItem.id === item.id 
                 ? { ...cartItem, quantity: cartItem.quantity + 1 } 
                 : cartItem
             )
           });
         } else {
-          set({ 
-            items: [...items, { ...item, quantity: 1 }]
-          });
+          set({ items: [...items, { ...item, quantity: 1 }] });
         }
       },
       
       removeFromCart: (itemId: string) => {
-        set({ 
-          items: get().items.filter((item) => item.id !== itemId)
-        });
+        const { items } = get();
+        set({ items: items.filter(item => item.id !== itemId) });
       },
       
       increaseQuantity: (itemId: string) => {
+        const { items } = get();
         set({
-          items: get().items.map((item) =>
+          items: items.map(item => 
             item.id === itemId 
               ? { ...item, quantity: item.quantity + 1 } 
               : item
@@ -81,74 +81,48 @@ export const useCartStore = create<CartState>()(
       },
       
       decreaseQuantity: (itemId: string) => {
-        const item = get().items.find((item) => item.id === itemId);
+        const { items } = get();
+        const existingItem = items.find(item => item.id === itemId);
         
-        if (item && item.quantity > 1) {
+        if (existingItem && existingItem.quantity === 1) {
+          get().removeFromCart(itemId);
+        } else {
           set({
-            items: get().items.map((item) =>
+            items: items.map(item => 
               item.id === itemId 
                 ? { ...item, quantity: item.quantity - 1 } 
                 : item
             )
           });
-        } else if (item && item.quantity === 1) {
-          get().removeFromCart(itemId);
         }
       },
       
-      clearCart: () => {
-        set({ items: [] });
-      },
+      clearCart: () => set({ items: [] }),
       
-      toggleCart: () => {
-        set({ isOpen: !get().isOpen });
-      },
+      toggleCart: () => set(state => ({ isOpen: !state.isOpen })),
+      closeCart: () => set({ isOpen: false }),
+      openCart: () => set({ isOpen: true }),
       
-      closeCart: () => {
-        set({ isOpen: false });
-      },
-      
-      openCart: () => {
-        set({ isOpen: true });
-      },
-      
-      openCheckoutModal: () => {
-        set({ 
-          checkoutModalOpen: true,
-          isOpen: false 
-        });
-      },
-      
-      closeCheckoutModal: () => {
-        set({ checkoutModalOpen: false });
-      },
+      openCheckoutModal: () => set({ checkoutModalOpen: true, isOpen: false }),
+      closeCheckoutModal: () => set({ checkoutModalOpen: false }),
       
       openConfirmationModal: (orderNumber: string) => {
         set({ 
-          confirmationModalOpen: true,
+          confirmationModalOpen: true, 
           checkoutModalOpen: false,
           orderNumber
         });
       },
       
-      closeConfirmationModal: () => {
-        set({ 
-          confirmationModalOpen: false,
-          orderNumber: null,
-          checkoutData: null
-        });
-        get().clearCart();
-      },
+      closeConfirmationModal: () => set({ confirmationModalOpen: false, orderNumber: null }),
       
       setCheckoutData: (data: CheckoutFormData) => {
         set({ checkoutData: data });
       },
       
       getSubtotal: () => {
-        return get().items.reduce(
-          (total, item) => total + item.price * item.quantity, 
-          0
-        );
+        const { items } = get();
+        return items.reduce((sum, item) => sum + (item.price * item.quantity), 0);
       },
       
       getTax: () => {
@@ -160,15 +134,12 @@ export const useCartStore = create<CartState>()(
       },
       
       getTotalItems: () => {
-        return get().items.reduce(
-          (total, item) => total + item.quantity, 
-          0
-        );
+        const { items } = get();
+        return items.reduce((sum, item) => sum + item.quantity, 0);
       }
     }),
     {
-      name: 'viva-veggie-cart',
-      skipHydration: true,
+      name: 'cart-storage'
     }
   )
 );

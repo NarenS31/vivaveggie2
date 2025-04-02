@@ -9,26 +9,24 @@ export function formatCurrency(amount: number): string {
   return new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency: 'USD',
+    minimumFractionDigits: 2,
   }).format(amount);
 }
 
 export function calculateTax(subtotal: number): number {
-  // 8% tax rate
-  return subtotal * 0.08;
+  // 8.5% tax rate
+  return subtotal * 0.085;
 }
 
 export function generateOrderNumber(): string {
-  const prefix = 'VV';
-  const randomNum = Math.floor(1000 + Math.random() * 9000);
-  return `${prefix}${randomNum}`;
+  const timestamp = Date.now().toString().slice(-6);
+  const random = Math.floor(Math.random() * 10000).toString().padStart(4, '0');
+  return `ORD-${timestamp}-${random}`;
 }
 
 export function scrollToSection(id: string): void {
   const element = document.getElementById(id);
   if (element) {
-    window.scrollTo({
-      top: element.offsetTop - 80,
-      behavior: 'smooth',
-    });
+    element.scrollIntoView({ behavior: 'smooth' });
   }
 }

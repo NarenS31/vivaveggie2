@@ -1,128 +1,117 @@
 import { MenuItem } from '@/types';
 
 export const menuItems: MenuItem[] = [
-  // Featured items
   {
-    id: 'harvest-buddha-bowl',
-    name: 'Harvest Buddha Bowl',
-    description: 'Quinoa, roasted sweet potatoes, avocado, kale, and chickpeas with lemon tahini dressing.',
-    price: 14.99,
-    image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd',
-    category: 'bowls',
-    featured: true,
-    tags: ['Best Seller']
-  },
-  {
-    id: 'garden-fresh-salad',
+    id: '1',
     name: 'Garden Fresh Salad',
-    description: 'Mixed greens, cherry tomatoes, cucumber, radish, carrot, and avocado with herb vinaigrette.',
-    price: 12.99,
-    image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c',
+    description: 'A refreshing mix of seasonal greens, cherry tomatoes, cucumber, and house dressing',
+    price: 9.99,
+    image: '/images/garden-salad.jpg',
     category: 'salads',
     featured: true,
-    tags: ['Staff Pick']
+    tags: ['gluten-free', 'vegan']
   },
   {
-    id: 'mediterranean-platter',
-    name: 'Mediterranean Platter',
-    description: 'Homemade hummus, baba ganoush, falafel, tabbouleh, olives, and warm pita bread.',
-    price: 16.99,
-    image: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe',
+    id: '2',
+    name: 'Mediterranean Hummus Platter',
+    description: 'Creamy hummus served with warm pita bread, olives, and fresh vegetables',
+    price: 11.99,
+    image: '/images/hummus-platter.jpg',
     category: 'appetizers',
     featured: true,
-    tags: ['New']
-  },
-  
-  // Appetizers
-  {
-    id: 'bruschetta',
-    name: 'Bruschetta',
-    description: 'Toasted baguette topped with fresh tomatoes, basil, garlic, and olive oil.',
-    price: 8.99,
-    image: 'https://images.unsplash.com/photo-1623428187969-5da2dcea5ebf',
-    category: 'appetizers'
+    tags: ['vegan']
   },
   {
-    id: 'spring-rolls',
-    name: 'Fresh Spring Rolls',
-    description: 'Rice paper rolls filled with fresh vegetables, herbs, and rice noodles with peanut dipping sauce.',
-    price: 9.99,
-    image: 'https://images.unsplash.com/photo-1541014741259-de529411b96a',
-    category: 'appetizers'
-  },
-  
-  // Salads
-  {
-    id: 'mediterranean-salad',
-    name: 'Mediterranean Salad',
-    description: 'Romaine lettuce, cucumber, tomato, red onion, olives, and feta cheese with olive oil dressing.',
-    price: 13.99,
-    image: 'https://images.unsplash.com/photo-1505253716362-afaea1d3d1af',
-    category: 'salads'
-  },
-  
-  // Main Courses
-  {
-    id: 'eggplant-parmesan',
-    name: 'Eggplant Parmesan',
-    description: 'Breaded eggplant, marinara sauce, mozzarella and parmesan cheese, served with pasta.',
+    id: '3',
+    name: 'Mushroom Risotto',
+    description: 'Creamy Arborio rice cooked with assorted wild mushrooms and finished with parmesan',
     price: 16.99,
-    image: 'https://images.unsplash.com/photo-1598449426314-8b02525e8733',
-    category: 'mains'
+    image: '/images/mushroom-risotto.jpg',
+    category: 'mains',
+    featured: true,
+    tags: ['gluten-free']
   },
   {
-    id: 'mushroom-risotto',
-    name: 'Wild Mushroom Risotto',
-    description: 'Creamy arborio rice with assorted wild mushrooms, garlic, herbs, and parmesan cheese.',
-    price: 17.99,
-    image: 'https://images.unsplash.com/photo-1588166524941-3bf61a9c41db',
-    category: 'mains'
+    id: '4',
+    name: 'Veggie Deluxe Burger',
+    description: 'Plant-based patty with lettuce, tomato, onion, and special sauce on a brioche bun',
+    price: 14.99,
+    image: '/images/veggie-burger.jpg',
+    category: 'mains',
+    tags: []
   },
-  
-  // Bowls
   {
-    id: 'power-protein-bowl',
-    name: 'Power Protein Bowl',
-    description: 'Brown rice, black beans, tofu, roasted vegetables, and avocado with chipotle lime sauce.',
+    id: '5',
+    name: 'Buddha Bowl',
+    description: 'Quinoa, roasted vegetables, avocado, and tahini sauce',
     price: 15.99,
-    image: 'https://images.unsplash.com/photo-1547592180-85f173990554',
-    category: 'bowls'
+    image: '/images/buddha-bowl.jpg',
+    category: 'bowls',
+    featured: true,
+    tags: ['gluten-free', 'vegan']
   },
-  
-  // Desserts
   {
-    id: 'chocolate-avocado-mousse',
-    name: 'Chocolate Avocado Mousse',
-    description: 'Rich, creamy chocolate mousse made with avocados, cocoa, and maple syrup.',
+    id: '6',
+    name: 'Spinach and Feta Stuffed Mushrooms',
+    description: 'Large portobello mushrooms filled with spinach, feta, and herbs',
+    price: 12.99,
+    image: '/images/stuffed-mushrooms.jpg',
+    category: 'appetizers',
+    tags: ['gluten-free']
+  },
+  {
+    id: '7',
+    name: 'Eggplant Parmesan',
+    description: 'Layers of breaded eggplant, marinara sauce, and melted cheese',
+    price: 17.99,
+    image: '/images/eggplant-parmesan.jpg',
+    category: 'mains',
+    tags: []
+  },
+  {
+    id: '8',
+    name: 'Fresh Fruit Tart',
+    description: 'Buttery crust filled with vanilla custard and topped with seasonal fruits',
     price: 8.99,
-    image: 'https://images.unsplash.com/photo-1551024506-0bccd828d307',
-    category: 'desserts'
+    image: '/images/fruit-tart.jpg',
+    category: 'desserts',
+    tags: []
   },
   {
-    id: 'berry-crumble',
-    name: 'Mixed Berry Crumble',
-    description: 'Warm mixed berry base with a crisp oat and almond topping, served with coconut cream.',
-    price: 9.99,
-    image: 'https://images.unsplash.com/photo-1563805042-7684c019e1cb',
-    category: 'desserts'
+    id: '9',
+    name: 'Mango Lassi',
+    description: 'Refreshing yogurt-based drink with mango, cardamom, and a hint of rose water',
+    price: 5.99,
+    image: '/images/mango-lassi.jpg',
+    category: 'drinks',
+    tags: ['gluten-free']
   },
-  
-  // Drinks
   {
-    id: 'green-detox-smoothie',
-    name: 'Green Detox Smoothie',
-    description: 'Spinach, kale, cucumber, green apple, ginger, and lemon juice.',
+    id: '10',
+    name: 'Lentil Soup',
+    description: 'Hearty soup made with red lentils, vegetables, and warming spices',
     price: 7.99,
-    image: 'https://images.unsplash.com/photo-1596392301391-6922e2d0165c',
-    category: 'drinks'
+    image: '/images/lentil-soup.jpg',
+    category: 'appetizers',
+    tags: ['gluten-free', 'vegan']
   },
   {
-    id: 'hibiscus-berry-iced-tea',
-    name: 'Hibiscus Berry Iced Tea',
-    description: 'Refreshing hibiscus tea with mixed berries and a hint of mint.',
-    price: 4.99,
-    image: 'https://images.unsplash.com/photo-1544252890-c3e4f4c9b908',
-    category: 'drinks'
+    id: '11',
+    name: 'Vegetable Pad Thai',
+    description: 'Rice noodles stir-fried with tofu, bean sprouts, and tamarind sauce',
+    price: 15.99,
+    image: '/images/pad-thai.jpg',
+    category: 'mains',
+    tags: ['vegan']
+  },
+  {
+    id: '12',
+    name: 'Chocolate Avocado Mousse',
+    description: 'Rich and creamy dessert made with ripe avocados and dark chocolate',
+    price: 8.99,
+    image: '/images/chocolate-mousse.jpg',
+    category: 'desserts',
+    tags: ['gluten-free', 'vegan']
   }
 ];
 
@@ -131,13 +120,11 @@ export const getFeaturedItems = (): MenuItem[] => {
 };
 
 export const getMenuItemsByCategory = (category: string): MenuItem[] => {
-  if (category === 'all') {
-    return menuItems;
-  }
   return menuItems.filter(item => item.category === category);
 };
 
 export const getMenuCategories = (): string[] => {
-  const categories = ['all', ...new Set(menuItems.map(item => item.category))];
-  return categories;
+  const categories = new Set<string>();
+  menuItems.forEach(item => categories.add(item.category));
+  return Array.from(categories);
 };

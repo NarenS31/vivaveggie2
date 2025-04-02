@@ -3,26 +3,34 @@ import { Testimonial } from '@/types';
 export const testimonials: Testimonial[] = [
   {
     id: '1',
-    name: 'Sarah J.',
-    image: 'https://randomuser.me/api/portraits/women/42.jpg',
+    name: 'Sarah Johnson',
+    image: '/images/testimonial-1.jpg',
     rating: 5,
-    comment: '"The best vegetarian food I\'ve ever had! The Harvest Buddha Bowl is so flavorful and satisfying. I never knew plant-based food could be this good. Highly recommend trying this place!"',
-    title: 'Regular Customer'
+    title: 'Amazing Flavors!',
+    comment: 'The Buddha Bowl was incredible! So fresh and flavorful. I never knew vegetarian food could be this satisfying.'
   },
   {
     id: '2',
-    name: 'Michael T.',
-    image: 'https://randomuser.me/api/portraits/men/32.jpg',
+    name: 'Michael Chen',
+    image: '/images/testimonial-2.jpg',
     rating: 5,
-    comment: '"I\'m not vegetarian, but this place has made me rethink how I eat. The flavors are incredible, and I don\'t miss meat at all when I eat here. The staff is also incredibly friendly and helpful."',
-    title: 'New Customer'
+    title: 'Outstanding Service',
+    comment: 'Not only was the food delicious, but the staff was so friendly and helpful. They made great recommendations for my dietary needs.'
   },
   {
     id: '3',
-    name: 'Emma R.',
-    image: 'https://randomuser.me/api/portraits/women/65.jpg',
-    rating: 4.5,
-    comment: '"Their online ordering system is so convenient! I order from VivaVeggie at least once a week. The Mediterranean Platter is my go-to, and it\'s perfect every time. Fresh ingredients and amazing flavors."',
-    title: 'Loyal Customer'
+    name: 'Emily Rodriguez',
+    image: '/images/testimonial-3.jpg',
+    rating: 4,
+    title: 'Perfect for Special Diets',
+    comment: 'As someone with several food allergies, it\'s usually hard to eat out. This place has so many options and they\'re all clearly labeled!'
+  },
+  {
+    id: '4',
+    name: 'David Thompson',
+    image: '/images/testimonial-4.jpg',
+    rating: 5,
+    title: 'Converted Meat-Lover',
+    comment: 'I was skeptical about going to a vegetarian restaurant, but the Veggie Deluxe Burger totally changed my mind. It was better than any meat burger I\'ve had!'
   }
 ];
