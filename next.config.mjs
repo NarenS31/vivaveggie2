@@ -10,6 +10,13 @@ const nextConfig = {
     };
     return config;
   },
+  // Simplify turbo configuration to avoid syntax errors
+  experimental: {
+    turbo: true,
+  },
+  images: {
+    domains: ['images.unsplash.com'],
+  },
 };
 
 export default nextConfig;
