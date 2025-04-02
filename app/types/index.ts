@@ -2,9 +2,11 @@ export interface MenuItem {
   id: string;
   name: string;
   description: string;
+  text: string;
   price: number;
+  location?: string;
   image: string;
-  category: 'appetizers' | 'salads' | 'mains' | 'bowls' | 'desserts' | 'drinks';
+  category: "appetizers" | "salads" | "mains" | "bowls" | "desserts" | "drinks";
   featured?: boolean;
   tags?: string[];
 }
@@ -29,5 +31,5 @@ export interface CheckoutFormData {
   email: string;
   phone: string;
   address: string;
-  deliveryMethod: 'delivery' | 'pickup';
+  deliveryMethod: "delivery" | "pickup";
 }

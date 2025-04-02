@@ -1,52 +1,32 @@
-import { Testimonial } from '@/types';
+import { Testimonial } from "@/types";
 
-export const testimonials: Testimonial[] = [
+export const testimonials = [
   {
-    id: '1',
-    name: 'Sophia Chen',
-    image: '/images/testimonials/sophia.jpg',
-    rating: 5,
-    comment: 'The Buddha Bowl is my weekly treat! Fresh ingredients, amazing flavors, and I love supporting a restaurant that cares about the planet.',
-    title: 'Health-Conscious Foodie'
+    name: "Sarah K.",
+    location: "Charlotte, NC",
+    text: "I've been a vegetarian for 10 years, and VivaVeggie offers the most creative and flavorful plant-based dishes I've ever tasted. The Buddha Bowl is a must-try, and I love knowing exactly which local farm my food comes from.",
+    image:
+      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80",
   },
   {
-    id: '2',
-    name: 'Marcus Johnson',
-    image: '/images/testimonials/marcus.jpg',
-    rating: 5,
-    comment: 'As someone new to plant-based eating, I was amazed at how satisfying the Plant-Based Burger was. Couldn\'t tell the difference!',
-    title: 'Flexitarian Explorer'
+    name: "Marcus J.",
+    location: "Raleigh, NC",
+    text: "As someone who typically eats meat, I was skeptical about a vegetarian restaurant. But VivaVeggie changed my perspective completely! Their mushroom risotto has more flavor than most dishes I've had at steakhouses. Now I'm a regular visitor when in Charlotte.",
+    image:
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80",
   },
   {
-    id: '3',
-    name: 'Olivia Rodriguez',
-    image: '/images/testimonials/olivia.jpg',
-    rating: 4,
-    comment: 'The online ordering system is so convenient, and the food arrives fresh every time. The Jackfruit Tacos are my go-to!',
-    title: 'Busy Professional'
+    name: "Priya S.",
+    location: "Charlotte, NC",
+    text: "The sustainability focus at VivaVeggie isn't just marketing—you can taste the difference in food that's grown with such care. Their farm-to-table commitment is evident in every bite, and their pre-ordering system made my office lunch meeting a breeze to organize.",
+    image:
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80",
   },
   {
-    id: '4',
-    name: 'David Kim',
-    image: '/images/testimonials/david.jpg',
-    rating: 5,
-    comment: 'Finally a restaurant where I can eat everything on the menu! My non-vegan friends always want to come here after trying the Cauliflower Wings.',
-    title: 'Long-time Vegan'
+    name: "James W.",
+    location: "Charlotte, NC",
+    text: "My wife and I celebrated our anniversary at VivaVeggie and were blown away. Not only was the food outstanding, but the staff took time to explain their sustainability practices and even showed us a map of exactly where each ingredient came from. This kind of transparency is refreshing.",
+    image:
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80",
   },
-  {
-    id: '5',
-    name: 'Emma Thompson',
-    image: '/images/testimonials/emma.jpg',
-    rating: 5,
-    comment: 'The seasonal menu keeps me coming back to try new dishes. The staff is knowledgeable and friendly too!',
-    title: 'Culinary Adventurer'
-  },
-  {
-    id: '6',
-    name: 'Jamal Washington',
-    image: '/images/testimonials/jamal.jpg',
-    rating: 4,
-    comment: 'Excellent gluten-free options that are clearly marked. As someone with celiac disease, I really appreciate the attention to detail.',
-    title: 'Gluten-Free Diner'
-  }
 ];
