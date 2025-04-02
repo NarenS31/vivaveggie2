@@ -1,22 +1,25 @@
 import { NextResponse } from 'next/server';
-import { menuItems, getFeaturedItems, getMenuItemsByCategory, getMenuCategories } from '@/data/menu';
+import { menuItems, getMenuItemsByCategory, getMenuCategories } from '@/data/menu';
 
 export async function GET(request: Request) {
-  const { searchParams } = new URL(request.url);
-  const category = searchParams.get('category');
-  const featured = searchParams.get('featured');
-  
-  if (featured === 'true') {
-    return NextResponse.json(getFeaturedItems());
-  }
+  const url = new URL(request.url);
+  const category = url.searchParams.get('category');
   
   if (category) {
-    return NextResponse.json(getMenuItemsByCategory(category));
+    // If category is provided, return items from that category
+    const items = getMenuItemsByCategory(category);
+    return NextResponse.json(items);
+  } else {
+    // Get categories query param
+    const categoriesOnly = url.searchParams.get('categories');
+    
+    if (categoriesOnly === 'true') {
+      // If categories only is requested, return just the categories
+      const categories = getMenuCategories();
+      return NextResponse.json(categories);
+    }
+    
+    // Otherwise return all menu items
+    return NextResponse.json(menuItems);
   }
-  
-  if (searchParams.has('categories')) {
-    return NextResponse.json(getMenuCategories());
-  }
-  
-  return NextResponse.json(menuItems);
 }

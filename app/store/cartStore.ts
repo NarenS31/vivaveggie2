@@ -1,8 +1,8 @@
 'use client';
 
 import { create } from 'zustand';
-import { devtools } from 'zustand/middleware';
-import { CartItem, MenuItem, CheckoutFormData } from '@/types';
+import { persist } from 'zustand/middleware';
+import { MenuItem, CartItem, CheckoutFormData } from '@/types';
 import { calculateTax } from '@/lib/utils';
 
 interface CartState {
@@ -38,7 +38,7 @@ interface CartState {
 }
 
 export const useCartStore = create<CartState>()(
-  devtools(
+  persist(
     (set, get) => ({
       items: [],
       isOpen: false,
@@ -47,82 +47,111 @@ export const useCartStore = create<CartState>()(
       orderNumber: null,
       checkoutData: null,
       
+      // Cart actions
       addToCart: (item: MenuItem) => {
         const { items } = get();
-        const existingItem = items.find(cartItem => cartItem.id === item.id);
+        const existingItem = items.find((i) => i.id === item.id);
         
         if (existingItem) {
+          // If item already in cart, increase quantity
           set({
-            items: items.map(cartItem => 
-              cartItem.id === item.id 
-                ? { ...cartItem, quantity: cartItem.quantity + 1 } 
+            items: items.map((cartItem) =>
+              cartItem.id === item.id
+                ? { ...cartItem, quantity: cartItem.quantity + 1 }
                 : cartItem
-            )
+            ),
           });
         } else {
+          // Add new item to cart
           set({ items: [...items, { ...item, quantity: 1 }] });
+        }
+        
+        // Open cart when adding item
+        if (!get().isOpen) {
+          set({ isOpen: true });
         }
       },
       
       removeFromCart: (itemId: string) => {
         const { items } = get();
-        set({ items: items.filter(item => item.id !== itemId) });
+        set({ items: items.filter((item) => item.id !== itemId) });
       },
       
       increaseQuantity: (itemId: string) => {
         const { items } = get();
         set({
-          items: items.map(item => 
+          items: items.map((item) =>
             item.id === itemId 
               ? { ...item, quantity: item.quantity + 1 } 
               : item
-          )
+          ),
         });
       },
       
       decreaseQuantity: (itemId: string) => {
         const { items } = get();
-        const existingItem = items.find(item => item.id === itemId);
+        const itemToUpdate = items.find((item) => item.id === itemId);
         
-        if (existingItem && existingItem.quantity === 1) {
-          get().removeFromCart(itemId);
-        } else {
+        if (itemToUpdate && itemToUpdate.quantity > 1) {
+          // Decrease quantity
           set({
-            items: items.map(item => 
+            items: items.map((item) =>
               item.id === itemId 
                 ? { ...item, quantity: item.quantity - 1 } 
                 : item
-            )
+            ),
           });
+        } else {
+          // Remove item if quantity would become 0
+          set({ items: items.filter((item) => item.id !== itemId) });
         }
       },
       
-      clearCart: () => set({ items: [] }),
+      clearCart: () => {
+        set({ items: [] });
+      },
       
-      toggleCart: () => set(state => ({ isOpen: !state.isOpen })),
-      closeCart: () => set({ isOpen: false }),
-      openCart: () => set({ isOpen: true }),
+      // UI actions
+      toggleCart: () => {
+        set((state) => ({ isOpen: !state.isOpen }));
+      },
       
-      openCheckoutModal: () => set({ checkoutModalOpen: true, isOpen: false }),
-      closeCheckoutModal: () => set({ checkoutModalOpen: false }),
+      closeCart: () => {
+        set({ isOpen: false });
+      },
+      
+      openCart: () => {
+        set({ isOpen: true });
+      },
+      
+      openCheckoutModal: () => {
+        set({ checkoutModalOpen: true, isOpen: false });
+      },
+      
+      closeCheckoutModal: () => {
+        set({ checkoutModalOpen: false });
+      },
       
       openConfirmationModal: (orderNumber: string) => {
         set({ 
           confirmationModalOpen: true, 
           checkoutModalOpen: false,
-          orderNumber
+          orderNumber,
         });
       },
       
-      closeConfirmationModal: () => set({ confirmationModalOpen: false, orderNumber: null }),
+      closeConfirmationModal: () => {
+        set({ confirmationModalOpen: false, orderNumber: null });
+      },
       
       setCheckoutData: (data: CheckoutFormData) => {
         set({ checkoutData: data });
       },
       
+      // Calculations
       getSubtotal: () => {
         const { items } = get();
-        return items.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+        return items.reduce((total, item) => total + item.price * item.quantity, 0);
       },
       
       getTax: () => {
@@ -130,16 +159,18 @@ export const useCartStore = create<CartState>()(
       },
       
       getTotal: () => {
-        return get().getSubtotal() + get().getTax();
+        const subtotal = get().getSubtotal();
+        const tax = get().getTax();
+        return subtotal + tax;
       },
       
       getTotalItems: () => {
         const { items } = get();
-        return items.reduce((sum, item) => sum + item.quantity, 0);
-      }
+        return items.reduce((total, item) => total + item.quantity, 0);
+      },
     }),
     {
-      name: 'cart-storage'
+      name: 'cart-storage', // Local storage key
     }
   )
 );

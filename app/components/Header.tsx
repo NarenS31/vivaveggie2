@@ -1,154 +1,119 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
-import { ShoppingCart } from 'lucide-react';
+import React from 'react';
+import Link from 'next/link';
+import { ShoppingBag, Menu, X } from 'lucide-react';
 import { useCartStore } from '@/store/cartStore';
 import { scrollToSection } from '@/lib/utils';
+import { useState } from 'react';
 
 export default function Header() {
-  const { toggleCart, getTotalItems } = useCartStore();
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState('home');
+  const { openCart, getTotalItems } = useCartStore();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen(!mobileMenuOpen);
+  // Handle mobile menu toggle
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  
+  // Close mobile menu
+  const closeMenu = () => setIsMenuOpen(false);
+  
+  // Handle section navigation 
+  const handleNavClick = (id: string) => {
+    scrollToSection(id);
+    closeMenu();
   };
-  
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, section: string) => {
-    e.preventDefault();
-    scrollToSection(section);
-    setActiveSection(section);
-    
-    if (mobileMenuOpen) {
-      setMobileMenuOpen(false);
-    }
-  };
-  
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = ['home', 'menu', 'about', 'contact'];
-      const currentSection = sections.find(section => {
-        const element = document.getElementById(section);
-        if (element) {
-          const rect = element.getBoundingClientRect();
-          return rect.top <= 100 && rect.bottom >= 100;
-        }
-        return false;
-      });
-      
-      if (currentSection) {
-        setActiveSection(currentSection);
-      }
-    };
-    
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
   
   return (
-    <header className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        <div className="flex items-center">
-          <span className="text-primary text-2xl font-display font-bold">
-            Viva<span className="text-secondary">Veggie</span>
+    <header className="fixed top-0 left-0 right-0 bg-white bg-opacity-95 shadow-sm z-50">
+      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+        {/* Logo */}
+        <Link href="/" className="flex items-center space-x-2" onClick={closeMenu}>
+          <span className="text-2xl font-bold bg-gradient-to-r from-green-600 to-teal-500 bg-clip-text text-transparent">
+            Viva Veggie
           </span>
-        </div>
+        </Link>
         
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-8">
-          <a 
-            href="#home"
-            onClick={(e) => handleNavClick(e, 'home')}
-            className={`nav-link font-medium hover:text-primary transition-colors ${activeSection === 'home' ? 'active' : ''}`}
-          >
-            Home
-          </a>
-          <a 
-            href="#menu"
-            onClick={(e) => handleNavClick(e, 'menu')}
-            className={`nav-link font-medium hover:text-primary transition-colors ${activeSection === 'menu' ? 'active' : ''}`}
+        <nav className="hidden md:flex space-x-8">
+          <button 
+            onClick={() => handleNavClick('menu')}
+            className="text-gray-700 hover:text-green-600 transition"
           >
             Menu
-          </a>
-          <a 
-            href="#about"
-            onClick={(e) => handleNavClick(e, 'about')}
-            className={`nav-link font-medium hover:text-primary transition-colors ${activeSection === 'about' ? 'active' : ''}`}
+          </button>
+          <button 
+            onClick={() => handleNavClick('about')}
+            className="text-gray-700 hover:text-green-600 transition"
           >
             About
-          </a>
-          <a 
-            href="#contact"
-            onClick={(e) => handleNavClick(e, 'contact')}
-            className={`nav-link font-medium hover:text-primary transition-colors ${activeSection === 'contact' ? 'active' : ''}`}
+          </button>
+          <button 
+            onClick={() => handleNavClick('testimonials')}
+            className="text-gray-700 hover:text-green-600 transition"
+          >
+            Testimonials
+          </button>
+          <button 
+            onClick={() => handleNavClick('contact')}
+            className="text-gray-700 hover:text-green-600 transition"
           >
             Contact
-          </a>
-          <button 
-            onClick={toggleCart}
-            className="relative flex items-center"
-            aria-label="Shopping Cart"
-          >
-            <ShoppingCart className="h-5 w-5" />
-            <span className="absolute -top-2 -right-2 bg-secondary text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
-              {getTotalItems()}
-            </span>
           </button>
         </nav>
         
-        {/* Mobile Navigation Button */}
-        <div className="md:hidden flex items-center">
-          <button 
-            onClick={toggleCart}
-            className="relative mr-4"
-            aria-label="Shopping Cart"
+        {/* Cart icon + counter */}
+        <div className="flex items-center space-x-4">
+          <button
+            className="relative p-2 text-gray-700 hover:text-green-600 transition"
+            onClick={openCart}
+            aria-label="Open shopping cart"
           >
-            <ShoppingCart className="h-5 w-5" />
-            <span className="absolute -top-2 -right-2 bg-secondary text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
-              {getTotalItems()}
-            </span>
+            <ShoppingBag />
+            {getTotalItems() > 0 && (
+              <span className="absolute -top-2 -right-2 bg-green-600 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+                {getTotalItems()}
+              </span>
+            )}
           </button>
-          <button 
-            onClick={toggleMobileMenu}
-            className="text-neutral-text focus:outline-none"
-            aria-label="Toggle Navigation Menu"
-          >
-            <i className={`fas ${mobileMenuOpen ? 'fa-times' : 'fa-bars'} text-2xl`}></i>
+          
+          {/* Mobile menu button */}
+          <button className="md:hidden" onClick={toggleMenu} aria-label="Toggle menu">
+            {isMenuOpen ? <X /> : <Menu />}
           </button>
         </div>
       </div>
       
-      {/* Mobile Menu */}
-      <div className={`md:hidden ${mobileMenuOpen ? 'block' : 'hidden'} bg-white pb-4 px-4 fade-in`}>
-        <a 
-          href="#home"
-          onClick={(e) => handleNavClick(e, 'home')}
-          className={`block py-2 text-center nav-link ${activeSection === 'home' ? 'active' : ''}`}
-        >
-          Home
-        </a>
-        <a 
-          href="#menu"
-          onClick={(e) => handleNavClick(e, 'menu')}
-          className={`block py-2 text-center nav-link ${activeSection === 'menu' ? 'active' : ''}`}
-        >
-          Menu
-        </a>
-        <a 
-          href="#about"
-          onClick={(e) => handleNavClick(e, 'about')}
-          className={`block py-2 text-center nav-link ${activeSection === 'about' ? 'active' : ''}`}
-        >
-          About
-        </a>
-        <a 
-          href="#contact"
-          onClick={(e) => handleNavClick(e, 'contact')}
-          className={`block py-2 text-center nav-link ${activeSection === 'contact' ? 'active' : ''}`}
-        >
-          Contact
-        </a>
-      </div>
+      {/* Mobile menu */}
+      {isMenuOpen && (
+        <div className="md:hidden bg-white shadow-md">
+          <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
+            <button 
+              onClick={() => handleNavClick('menu')}
+              className="text-gray-700 hover:text-green-600 transition py-2 text-left"
+            >
+              Menu
+            </button>
+            <button 
+              onClick={() => handleNavClick('about')}
+              className="text-gray-700 hover:text-green-600 transition py-2 text-left"
+            >
+              About
+            </button>
+            <button 
+              onClick={() => handleNavClick('testimonials')}
+              className="text-gray-700 hover:text-green-600 transition py-2 text-left"
+            >
+              Testimonials
+            </button>
+            <button 
+              onClick={() => handleNavClick('contact')}
+              className="text-gray-700 hover:text-green-600 transition py-2 text-left"
+            >
+              Contact
+            </button>
+          </div>
+        </div>
+      )}
     </header>
   );
 }

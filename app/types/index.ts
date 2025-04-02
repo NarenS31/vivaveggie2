@@ -13,6 +13,8 @@ export interface CartItem extends MenuItem {
   quantity: number;
 }
 
+export type CartItemType = CartItem;
+
 export interface Testimonial {
   id: string;
   name: string;

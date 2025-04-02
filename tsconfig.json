@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -19,7 +20,7 @@
     ],
     "paths": {
       "@/*": ["./app/*"],
-      "@shared/*": ["./shared/*"],
+      "@assets/*": ["./attached_assets/*"],
       "@components/*": ["./app/components/*"],
       "@lib/*": ["./app/lib/*"],
       "@ui/*": ["./app/components/ui/*"],
