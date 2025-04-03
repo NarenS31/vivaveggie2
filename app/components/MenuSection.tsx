@@ -192,7 +192,7 @@ const MenuSection: React.FC = () => {
           transition={{ staggerChildren: 0.1 }}
         >
           <AnimatePresence>
-            {filteredItems.map((item) => (
+            {filteredItems.map((item: any) => (
               <motion.div
                 key={item.id}
                 className="bg-white rounded-lg shadow-lg overflow-hidden relative"
