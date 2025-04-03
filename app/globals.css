@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* Include Google Fonts */
+
 
 @layer base {
   * {
@@ -19,12 +21,7 @@
     font-family: var(--font-body);
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
   }
 
@@ -60,12 +57,12 @@
 
   .text-accent-light {
     color: hsl(54, 100%, 80%);
-    text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 3px rgba(0,0,0,0.5);
   }
 
   .text-accent {
     color: hsl(54, 100%, 75%);
-    text-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
+    text-shadow: 0 0 4px rgba(0,0,0,0.6);
   }
 
   .text-secondary {
@@ -78,7 +75,7 @@
 
   .text-neutral-light {
     color: hsl(0, 0%, 100%);
-    text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 0 3px rgba(0,0,0,0.3);
   }
 
   .text-neutral-dark {
@@ -195,3 +192,4 @@
     right: 0;
   }
 }
+

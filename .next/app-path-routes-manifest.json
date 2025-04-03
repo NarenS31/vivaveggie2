@@ -1,8 +1,8 @@
 {
+  "/api/contact/route": "/api/contact",
   "/api/menu/route": "/api/menu",
   "/api/orders/route": "/api/orders",
   "/api/testimonials/route": "/api/testimonials",
-  "/api/contact/route": "/api/contact",
   "/_not-found/page": "/_not-found",
   "/page": "/"
 }

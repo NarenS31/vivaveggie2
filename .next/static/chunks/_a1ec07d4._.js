@@ -873,13 +873,13 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$mo
 const HeroSection = ({ onMenuClick, onPreOrderClick })=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "home",
-        className: "pt-24 pb-16 md:pt-32 md:pb-24 bg-cover bg-center relative h-screen flex items-center overflow-hidden",
+        className: "relative h-screen flex items-center justify-center overflow-hidden bg-cover bg-center pt-24 pb-16 md:pt-32 md:pb-24",
         style: {
             backgroundImage: "url('https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')"
         },
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                className: "absolute inset-0 bg-gradient-to-b from-black via-primary-dark to-primary/90",
+                className: "absolute inset-0 bg-gradient-to-b from-black via-primary-dark to-primary/90 opacity-80",
                 initial: {
                     opacity: 0
                 },
@@ -891,15 +891,15 @@ const HeroSection = ({ onMenuClick, onPreOrderClick })=>{
                 }
             }, void 0, false, {
                 fileName: "[project]/app/components/HeroSection.tsx",
-                lineNumber: 13,
+                lineNumber: 23,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute inset-0 overflow-hidden pointer-events-none",
                 children: [
-                    ...Array(10)
+                    ...Array(15)
                 ].map((_, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                        className: "absolute w-4 h-4 md:w-6 md:h-6 rounded-full bg-accent opacity-30",
+                        className: "absolute w-5 h-5 md:w-7 md:h-7 rounded-full bg-accent opacity-30 blur-lg",
                         initial: {
                             x: Math.random() * 100 - 50 + "%",
                             y: Math.random() * 100 + "%",
@@ -920,260 +920,125 @@ const HeroSection = ({ onMenuClick, onPreOrderClick })=>{
                         }
                     }, i, false, {
                         fileName: "[project]/app/components/HeroSection.tsx",
-                        lineNumber: 23,
+                        lineNumber: 33,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/app/components/HeroSection.tsx",
-                lineNumber: 21,
+                lineNumber: 31,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "container mx-auto px-4 relative z-10",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "max-w-3xl mx-auto text-center",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                            initial: {
-                                opacity: 0,
-                                scale: 0.8
-                            },
-                            animate: {
-                                opacity: 1,
-                                scale: 1
-                            },
-                            transition: {
-                                duration: 0.8
-                            },
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h1, {
-                                    className: "font-accent text-6xl md:text-7xl text-white mb-4 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]",
-                                    initial: {
-                                        opacity: 0,
-                                        y: -50
-                                    },
-                                    animate: {
-                                        opacity: 1,
-                                        y: 0
-                                    },
-                                    transition: {
-                                        type: "spring",
-                                        stiffness: 100,
-                                        delay: 0.2
-                                    },
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].span, {
-                                        className: "inline-block text-stroke-sm",
-                                        whileHover: {
-                                            scale: 1.1,
-                                            color: "#ffffff",
-                                            textShadow: "0 0 12px rgba(255,255,255,0.9)"
-                                        },
-                                        children: "Welcome to VivaVeggie"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/components/HeroSection.tsx",
-                                        lineNumber: 65,
-                                        columnNumber: 15
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/app/components/HeroSection.tsx",
-                                    lineNumber: 55,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
-                                    className: "text-white text-xl md:text-2xl mb-10 drop-shadow-[0_2px_3px_rgba(0,0,0,0.8)] font-medium",
-                                    initial: {
-                                        opacity: 0,
-                                        y: 30
-                                    },
-                                    animate: {
-                                        opacity: 1,
-                                        y: 0
-                                    },
-                                    transition: {
-                                        type: "spring",
-                                        stiffness: 50,
-                                        delay: 0.4
-                                    },
-                                    children: "Charlotte's premier farm-to-table vegetarian restaurant"
-                                }, void 0, false, {
-                                    fileName: "[project]/app/components/HeroSection.tsx",
-                                    lineNumber: 77,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
+                className: "container mx-auto px-4 relative z-10 text-center",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h1, {
+                        className: "text-6xl md:text-7xl font-bold text-white mb-6 drop-shadow-lg",
+                        initial: {
+                            opacity: 0,
+                            y: -50
+                        },
+                        animate: {
+                            opacity: 1,
+                            y: 0
+                        },
+                        transition: {
+                            delay: 0.3,
+                            duration: 0.8
+                        },
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                            className: "bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500",
+                            children: "Welcome to VivaVeggie"
+                        }, void 0, false, {
                             fileName: "[project]/app/components/HeroSection.tsx",
-                            lineNumber: 50,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                            className: "flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 justify-center",
-                            initial: {
-                                opacity: 0,
-                                y: 50
-                            },
-                            animate: {
-                                opacity: 1,
-                                y: 0
-                            },
-                            transition: {
-                                type: "spring",
-                                stiffness: 40,
-                                delay: 0.6
-                            },
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
-                                    onClick: onMenuClick,
-                                    whileHover: {
-                                        scale: 1.05
-                                    },
-                                    whileTap: {
-                                        scale: 0.95
-                                    },
-                                    className: "relative bg-primary hover:bg-primary-dark text-white font-semibold py-3 px-6 rounded-lg transition duration-300 inline-flex items-center justify-center overflow-hidden group",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "relative z-10 flex items-center",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                                    xmlns: "http://www.w3.org/2000/svg",
-                                                    className: "h-5 w-5 mr-2",
-                                                    viewBox: "0 0 20 20",
-                                                    fill: "currentColor",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                                        d: "M3 3a1 1 0 000 2h11a1 1 0 100-2H3zM3 7a1 1 0 000 2h5a1 1 0 000-2H3zM3 11a1 1 0 100 2h4a1 1 0 100-2H3zM13 16a1 1 0 102 0v-5.586l1.293 1.293a1 1 0 001.414-1.414l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 101.414 1.414L13 10.414V16z"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/components/HeroSection.tsx",
-                                                        lineNumber: 109,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/components/HeroSection.tsx",
-                                                    lineNumber: 108,
-                                                    columnNumber: 17
-                                                }, this),
-                                                "Explore Our Menu"
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/app/components/HeroSection.tsx",
-                                            lineNumber: 107,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "absolute top-0 left-0 w-full h-full bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/components/HeroSection.tsx",
-                                            lineNumber: 113,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white to-transparent -translate-x-full group-hover:animate-shine"
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/components/HeroSection.tsx",
-                                            lineNumber: 114,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/app/components/HeroSection.tsx",
-                                    lineNumber: 101,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
-                                    onClick: onPreOrderClick,
-                                    whileHover: {
-                                        scale: 1.05
-                                    },
-                                    whileTap: {
-                                        scale: 0.95
-                                    },
-                                    className: "relative bg-orange-500 hover:bg-secondary-dark text-white font-semibold py-3 px-6 rounded-lg transition duration-300 inline-flex items-center justify-center overflow-hidden group",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "relative z-10 flex items-center",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                                    xmlns: "http://www.w3.org/2000/svg",
-                                                    className: "h-5 w-5 mr-2",
-                                                    viewBox: "0 0 20 20",
-                                                    fill: "currentColor",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                                        d: "M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/components/HeroSection.tsx",
-                                                        lineNumber: 125,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/components/HeroSection.tsx",
-                                                    lineNumber: 124,
-                                                    columnNumber: 17
-                                                }, this),
-                                                "Pre-Order Now"
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/app/components/HeroSection.tsx",
-                                            lineNumber: 123,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "absolute top-0 left-0 w-full h-full bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/components/HeroSection.tsx",
-                                            lineNumber: 129,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white to-transparent -translate-x-full group-hover:animate-shine"
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/components/HeroSection.tsx",
-                                            lineNumber: 130,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/app/components/HeroSection.tsx",
-                                    lineNumber: 117,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/app/components/HeroSection.tsx",
-                            lineNumber: 91,
+                            lineNumber: 65,
                             columnNumber: 11
                         }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/app/components/HeroSection.tsx",
-                    lineNumber: 49,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
+                    }, void 0, false, {
+                        fileName: "[project]/app/components/HeroSection.tsx",
+                        lineNumber: 59,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
+                        className: "text-white text-lg md:text-2xl mb-8 opacity-90",
+                        initial: {
+                            opacity: 0,
+                            y: 20
+                        },
+                        animate: {
+                            opacity: 1,
+                            y: 0
+                        },
+                        transition: {
+                            delay: 0.5,
+                            duration: 0.8
+                        },
+                        children: "Charlotte's premier farm-to-table vegetarian restaurant"
+                    }, void 0, false, {
+                        fileName: "[project]/app/components/HeroSection.tsx",
+                        lineNumber: 70,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                        className: "flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6",
+                        initial: {
+                            opacity: 0,
+                            y: 50
+                        },
+                        animate: {
+                            opacity: 1,
+                            y: 0
+                        },
+                        transition: {
+                            delay: 0.7,
+                            duration: 0.8
+                        },
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
+                                onClick: onMenuClick,
+                                whileHover: {
+                                    scale: 1.1
+                                },
+                                whileTap: {
+                                    scale: 0.95
+                                },
+                                className: "px-6 py-3 bg-primary hover:bg-primary-dark text-white font-semibold rounded-lg shadow-md transition-all duration-300",
+                                children: "Explore Our Menu"
+                            }, void 0, false, {
+                                fileName: "[project]/app/components/HeroSection.tsx",
+                                lineNumber: 85,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
+                                onClick: onPreOrderClick,
+                                whileHover: {
+                                    scale: 1.1
+                                },
+                                whileTap: {
+                                    scale: 0.95
+                                },
+                                className: "px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-lg shadow-md transition-all duration-300",
+                                children: "Pre-Order Now"
+                            }, void 0, false, {
+                                fileName: "[project]/app/components/HeroSection.tsx",
+                                lineNumber: 94,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/app/components/HeroSection.tsx",
+                        lineNumber: 79,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
                 fileName: "[project]/app/components/HeroSection.tsx",
-                lineNumber: 48,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                className: "section-divider absolute bottom-0 left-0 right-0",
-                initial: {
-                    scaleX: 0
-                },
-                animate: {
-                    scaleX: 1
-                },
-                transition: {
-                    duration: 1,
-                    delay: 1
-                }
-            }, void 0, false, {
-                fileName: "[project]/app/components/HeroSection.tsx",
-                lineNumber: 136,
+                lineNumber: 58,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/HeroSection.tsx",
-        lineNumber: 11,
+        lineNumber: 14,
         columnNumber: 5
     }, this);
 };
@@ -1964,13 +1829,13 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$lea
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$leaflet$2f$lib$2f$Circle$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-leaflet/lib/Circle.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$leaflet$2f$lib$2f$Polyline$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-leaflet/lib/Polyline.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$leaflet$2f$lib$2f$hooks$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-leaflet/lib/hooks.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$leaflet$2f$dist$2f$leaflet$2d$src$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/leaflet/dist/leaflet-src.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/components/AnimatePresence/index.mjs [app-client] (ecmascript)");
 // Fix leaflet marker icon issue
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$leaflet$2f$dist$2f$images$2f$marker$2d$icon$2d$2x$2e$png__$28$static__in__ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/leaflet/dist/images/marker-icon-2x.png (static in ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$leaflet$2f$dist$2f$images$2f$marker$2d$icon$2e$png__$28$static__in__ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/leaflet/dist/images/marker-icon.png (static in ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$leaflet$2f$dist$2f$images$2f$marker$2d$shadow$2e$png__$28$static__in__ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/leaflet/dist/images/marker-shadow.png (static in ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$leaflet$2f$dist$2f$leaflet$2d$src$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/leaflet/dist/leaflet-src.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.signature();
 ;
@@ -2295,7 +2160,7 @@ const WeatherDisplay = ({ farmLocation })=>{
                         children: "Current Weather"
                     }, void 0, false, {
                         fileName: "[project]/app/components/IngredientMap.tsx",
-                        lineNumber: 317,
+                        lineNumber: 318,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2303,13 +2168,13 @@ const WeatherDisplay = ({ farmLocation })=>{
                         children: weather.condition
                     }, void 0, false, {
                         fileName: "[project]/app/components/IngredientMap.tsx",
-                        lineNumber: 318,
+                        lineNumber: 319,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/IngredientMap.tsx",
-                lineNumber: 316,
+                lineNumber: 317,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2322,7 +2187,7 @@ const WeatherDisplay = ({ farmLocation })=>{
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/IngredientMap.tsx",
-                        lineNumber: 321,
+                        lineNumber: 322,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2333,19 +2198,19 @@ const WeatherDisplay = ({ farmLocation })=>{
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/IngredientMap.tsx",
-                        lineNumber: 322,
+                        lineNumber: 323,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/IngredientMap.tsx",
-                lineNumber: 320,
+                lineNumber: 321,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/IngredientMap.tsx",
-        lineNumber: 315,
+        lineNumber: 316,
         columnNumber: 5
     }, this);
 };
@@ -2372,7 +2237,7 @@ const SeasonalForecast = ({ ingredients })=>{
                 children: "Seasonal Availability Forecast"
             }, void 0, false, {
                 fileName: "[project]/app/components/IngredientMap.tsx",
-                lineNumber: 360,
+                lineNumber: 361,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2383,7 +2248,7 @@ const SeasonalForecast = ({ ingredients })=>{
                         children: "Currently In Season:"
                     }, void 0, false, {
                         fileName: "[project]/app/components/IngredientMap.tsx",
-                        lineNumber: 365,
+                        lineNumber: 366,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2393,25 +2258,25 @@ const SeasonalForecast = ({ ingredients })=>{
                                 children: ing.name
                             }, ing.id, false, {
                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                lineNumber: 371,
+                                lineNumber: 372,
                                 columnNumber: 15
                             }, this)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                             className: "text-xs text-neutral-dark italic",
                             children: "Limited seasonal items available"
                         }, void 0, false, {
                             fileName: "[project]/app/components/IngredientMap.tsx",
-                            lineNumber: 379,
+                            lineNumber: 380,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/components/IngredientMap.tsx",
-                        lineNumber: 368,
+                        lineNumber: 369,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/IngredientMap.tsx",
-                lineNumber: 364,
+                lineNumber: 365,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2421,7 +2286,7 @@ const SeasonalForecast = ({ ingredients })=>{
                         children: "Coming Next Season:"
                     }, void 0, false, {
                         fileName: "[project]/app/components/IngredientMap.tsx",
-                        lineNumber: 387,
+                        lineNumber: 388,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2431,31 +2296,31 @@ const SeasonalForecast = ({ ingredients })=>{
                                 children: ing.name
                             }, ing.id, false, {
                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                lineNumber: 393,
+                                lineNumber: 394,
                                 columnNumber: 15
                             }, this)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                             className: "text-xs text-neutral-dark italic",
                             children: "Planning next season's crops"
                         }, void 0, false, {
                             fileName: "[project]/app/components/IngredientMap.tsx",
-                            lineNumber: 401,
+                            lineNumber: 402,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/components/IngredientMap.tsx",
-                        lineNumber: 390,
+                        lineNumber: 391,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/IngredientMap.tsx",
-                lineNumber: 386,
+                lineNumber: 387,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/IngredientMap.tsx",
-        lineNumber: 359,
+        lineNumber: 360,
         columnNumber: 5
     }, this);
 };
@@ -2473,7 +2338,7 @@ const SustainabilityCalculator = ({ farm })=>{
                 children: "Sustainability Impact"
             }, void 0, false, {
                 fileName: "[project]/app/components/IngredientMap.tsx",
-                lineNumber: 419,
+                lineNumber: 420,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2488,7 +2353,7 @@ const SustainabilityCalculator = ({ farm })=>{
                                         children: "Food Miles Avoided"
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                        lineNumber: 426,
+                                        lineNumber: 427,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2499,13 +2364,13 @@ const SustainabilityCalculator = ({ farm })=>{
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                        lineNumber: 427,
+                                        lineNumber: 428,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                lineNumber: 425,
+                                lineNumber: 426,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2517,18 +2382,18 @@ const SustainabilityCalculator = ({ farm })=>{
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/IngredientMap.tsx",
-                                    lineNumber: 430,
+                                    lineNumber: 431,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                lineNumber: 429,
+                                lineNumber: 430,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/IngredientMap.tsx",
-                        lineNumber: 424,
+                        lineNumber: 425,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2540,7 +2405,7 @@ const SustainabilityCalculator = ({ farm })=>{
                                         children: "Carbon Reduction"
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                        lineNumber: 439,
+                                        lineNumber: 440,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2551,13 +2416,13 @@ const SustainabilityCalculator = ({ farm })=>{
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                        lineNumber: 440,
+                                        lineNumber: 441,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                lineNumber: 438,
+                                lineNumber: 439,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2569,18 +2434,18 @@ const SustainabilityCalculator = ({ farm })=>{
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/IngredientMap.tsx",
-                                    lineNumber: 445,
+                                    lineNumber: 446,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                lineNumber: 444,
+                                lineNumber: 445,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/IngredientMap.tsx",
-                        lineNumber: 437,
+                        lineNumber: 438,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2592,7 +2457,7 @@ const SustainabilityCalculator = ({ farm })=>{
                                         children: "Water Conservation"
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                        lineNumber: 454,
+                                        lineNumber: 455,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2603,13 +2468,13 @@ const SustainabilityCalculator = ({ farm })=>{
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                        lineNumber: 455,
+                                        lineNumber: 456,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                lineNumber: 453,
+                                lineNumber: 454,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2621,24 +2486,24 @@ const SustainabilityCalculator = ({ farm })=>{
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/IngredientMap.tsx",
-                                    lineNumber: 458,
+                                    lineNumber: 459,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                lineNumber: 457,
+                                lineNumber: 458,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/IngredientMap.tsx",
-                        lineNumber: 452,
+                        lineNumber: 453,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/IngredientMap.tsx",
-                lineNumber: 423,
+                lineNumber: 424,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2655,18 +2520,18 @@ const SustainabilityCalculator = ({ farm })=>{
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/IngredientMap.tsx",
-                    lineNumber: 467,
+                    lineNumber: 468,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/components/IngredientMap.tsx",
-                lineNumber: 466,
+                lineNumber: 467,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/IngredientMap.tsx",
-        lineNumber: 418,
+        lineNumber: 419,
         columnNumber: 5
     }, this);
 };
@@ -2754,7 +2619,7 @@ const CookingTutorialPreview = ({ ingredient })=>{
                         children: "Cooking Tutorial"
                     }, void 0, false, {
                         fileName: "[project]/app/components/IngredientMap.tsx",
-                        lineNumber: 556,
+                        lineNumber: 557,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2762,13 +2627,13 @@ const CookingTutorialPreview = ({ ingredient })=>{
                         children: "AR Ready"
                     }, void 0, false, {
                         fileName: "[project]/app/components/IngredientMap.tsx",
-                        lineNumber: 559,
+                        lineNumber: 560,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/IngredientMap.tsx",
-                lineNumber: 555,
+                lineNumber: 556,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2776,7 +2641,7 @@ const CookingTutorialPreview = ({ ingredient })=>{
                 children: recipe.name
             }, void 0, false, {
                 fileName: "[project]/app/components/IngredientMap.tsx",
-                lineNumber: 564,
+                lineNumber: 565,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2787,7 +2652,7 @@ const CookingTutorialPreview = ({ ingredient })=>{
                         children: recipe.difficulty
                     }, void 0, false, {
                         fileName: "[project]/app/components/IngredientMap.tsx",
-                        lineNumber: 567,
+                        lineNumber: 568,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2800,13 +2665,13 @@ const CookingTutorialPreview = ({ ingredient })=>{
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/IngredientMap.tsx",
-                        lineNumber: 568,
+                        lineNumber: 569,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/IngredientMap.tsx",
-                lineNumber: 566,
+                lineNumber: 567,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2819,7 +2684,7 @@ const CookingTutorialPreview = ({ ingredient })=>{
                                 children: index + 1
                             }, void 0, false, {
                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                lineNumber: 576,
+                                lineNumber: 577,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2827,18 +2692,18 @@ const CookingTutorialPreview = ({ ingredient })=>{
                                 children: step
                             }, void 0, false, {
                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                lineNumber: 579,
+                                lineNumber: 580,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, index, true, {
                         fileName: "[project]/app/components/IngredientMap.tsx",
-                        lineNumber: 575,
+                        lineNumber: 576,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/app/components/IngredientMap.tsx",
-                lineNumber: 573,
+                lineNumber: 574,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2846,13 +2711,13 @@ const CookingTutorialPreview = ({ ingredient })=>{
                 children: "Launch AR Cooking Tutorial"
             }, void 0, false, {
                 fileName: "[project]/app/components/IngredientMap.tsx",
-                lineNumber: 584,
+                lineNumber: 585,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/IngredientMap.tsx",
-        lineNumber: 554,
+        lineNumber: 555,
         columnNumber: 5
     }, this);
 };
@@ -2945,14 +2810,14 @@ const IngredientMap = ()=>{
                             children: "Our Ingredient Sourcing Map"
                         }, void 0, false, {
                             fileName: "[project]/app/components/IngredientMap.tsx",
-                            lineNumber: 664,
+                            lineNumber: 665,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "w-24 h-1 bg-accent mx-auto mb-6"
                         }, void 0, false, {
                             fileName: "[project]/app/components/IngredientMap.tsx",
-                            lineNumber: 667,
+                            lineNumber: 668,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2960,13 +2825,13 @@ const IngredientMap = ()=>{
                             children: "Discover where every ingredient in our dishes comes from - all sourced within 50 miles of our kitchen"
                         }, void 0, false, {
                             fileName: "[project]/app/components/IngredientMap.tsx",
-                            lineNumber: 668,
+                            lineNumber: 669,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/IngredientMap.tsx",
-                    lineNumber: 657,
+                    lineNumber: 658,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2979,7 +2844,7 @@ const IngredientMap = ()=>{
                             children: "Map View"
                         }, void 0, false, {
                             fileName: "[project]/app/components/IngredientMap.tsx",
-                            lineNumber: 675,
+                            lineNumber: 676,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2989,7 +2854,7 @@ const IngredientMap = ()=>{
                             children: "Satellite View"
                         }, void 0, false, {
                             fileName: "[project]/app/components/IngredientMap.tsx",
-                            lineNumber: 686,
+                            lineNumber: 687,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2998,7 +2863,7 @@ const IngredientMap = ()=>{
                             children: showConnections ? "Hide Supply Routes" : "Show Supply Routes"
                         }, void 0, false, {
                             fileName: "[project]/app/components/IngredientMap.tsx",
-                            lineNumber: 697,
+                            lineNumber: 698,
                             columnNumber: 11
                         }, this),
                         selectedFarm && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3007,13 +2872,13 @@ const IngredientMap = ()=>{
                             children: "Reset View"
                         }, void 0, false, {
                             fileName: "[project]/app/components/IngredientMap.tsx",
-                            lineNumber: 708,
+                            lineNumber: 709,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/IngredientMap.tsx",
-                    lineNumber: 674,
+                    lineNumber: 675,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3037,14 +2902,14 @@ const IngredientMap = ()=>{
                                                 farmId: selectedFarm.id
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                                lineNumber: 727,
+                                                lineNumber: 728,
                                                 columnNumber: 21
                                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(FlyToMarker, {
                                                 position: restaurantLocation,
                                                 farmId: null
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                                lineNumber: 732,
+                                                lineNumber: 733,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$leaflet$2f$lib$2f$TileLayer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TileLayer"], {
@@ -3052,7 +2917,7 @@ const IngredientMap = ()=>{
                                                 url: activeView === "map" ? "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" : "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                                lineNumber: 735,
+                                                lineNumber: 736,
                                                 columnNumber: 19
                                             }, this),
                                             showConnections && getConnectionLines().map((line, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$leaflet$2f$lib$2f$Polyline$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Polyline"], {
@@ -3065,7 +2930,7 @@ const IngredientMap = ()=>{
                                                     }
                                                 }, index, false, {
                                                     fileName: "[project]/app/components/IngredientMap.tsx",
-                                                    lineNumber: 747,
+                                                    lineNumber: 748,
                                                     columnNumber: 23
                                                 }, this)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$leaflet$2f$lib$2f$Marker$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Marker"], {
@@ -3080,7 +2945,7 @@ const IngredientMap = ()=>{
                                                                 children: "VivaVeggie Restaurant"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                lineNumber: 763,
+                                                                lineNumber: 764,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3088,23 +2953,23 @@ const IngredientMap = ()=>{
                                                                 children: "Our farm-to-table kitchen in Charlotte"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                lineNumber: 766,
+                                                                lineNumber: 767,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                                        lineNumber: 762,
+                                                        lineNumber: 763,
                                                         columnNumber: 23
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/components/IngredientMap.tsx",
-                                                    lineNumber: 761,
+                                                    lineNumber: 762,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                                lineNumber: 760,
+                                                lineNumber: 761,
                                                 columnNumber: 19
                                             }, this),
                                             farms.map((farm)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].Fragment, {
@@ -3125,7 +2990,7 @@ const IngredientMap = ()=>{
                                                                             children: farm.name
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                            lineNumber: 787,
+                                                                            lineNumber: 788,
                                                                             columnNumber: 29
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3133,7 +2998,7 @@ const IngredientMap = ()=>{
                                                                             children: farm.description
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                            lineNumber: 790,
+                                                                            lineNumber: 791,
                                                                             columnNumber: 29
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3144,7 +3009,7 @@ const IngredientMap = ()=>{
                                                                                     children: "Distance:"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                                    lineNumber: 792,
+                                                                                    lineNumber: 793,
                                                                                     columnNumber: 31
                                                                                 }, this),
                                                                                 " ",
@@ -3153,7 +3018,7 @@ const IngredientMap = ()=>{
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                            lineNumber: 791,
+                                                                            lineNumber: 792,
                                                                             columnNumber: 29
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3164,7 +3029,7 @@ const IngredientMap = ()=>{
                                                                                     children: "Key ingredients:"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                                    lineNumber: 796,
+                                                                                    lineNumber: 797,
                                                                                     columnNumber: 31
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3174,34 +3039,34 @@ const IngredientMap = ()=>{
                                                                                             children: ing
                                                                                         }, idx, false, {
                                                                                             fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                                            lineNumber: 801,
+                                                                                            lineNumber: 802,
                                                                                             columnNumber: 35
                                                                                         }, this))
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                                    lineNumber: 799,
+                                                                                    lineNumber: 800,
                                                                                     columnNumber: 31
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                            lineNumber: 795,
+                                                                            lineNumber: 796,
                                                                             columnNumber: 29
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                    lineNumber: 786,
+                                                                    lineNumber: 787,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                lineNumber: 785,
+                                                                lineNumber: 786,
                                                                 columnNumber: 25
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/IngredientMap.tsx",
-                                                            lineNumber: 776,
+                                                            lineNumber: 777,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$leaflet$2f$lib$2f$Circle$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Circle"], {
@@ -3216,24 +3081,24 @@ const IngredientMap = ()=>{
                                                             }
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/IngredientMap.tsx",
-                                                            lineNumber: 815,
+                                                            lineNumber: 816,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, farm.id, true, {
                                                     fileName: "[project]/app/components/IngredientMap.tsx",
-                                                    lineNumber: 775,
+                                                    lineNumber: 776,
                                                     columnNumber: 21
                                                 }, this))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                        lineNumber: 721,
+                                        lineNumber: 722,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/IngredientMap.tsx",
-                                    lineNumber: 720,
+                                    lineNumber: 721,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3244,7 +3109,7 @@ const IngredientMap = ()=>{
                                             children: "Map Legend"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/IngredientMap.tsx",
-                                            lineNumber: 842,
+                                            lineNumber: 843,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3257,7 +3122,7 @@ const IngredientMap = ()=>{
                                                             className: "w-4 h-4 rounded-full bg-[#ef4444] mr-2"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/IngredientMap.tsx",
-                                                            lineNumber: 847,
+                                                            lineNumber: 848,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3265,13 +3130,13 @@ const IngredientMap = ()=>{
                                                             children: "Restaurant"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/IngredientMap.tsx",
-                                                            lineNumber: 848,
+                                                            lineNumber: 849,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/components/IngredientMap.tsx",
-                                                    lineNumber: 846,
+                                                    lineNumber: 847,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3281,7 +3146,7 @@ const IngredientMap = ()=>{
                                                             className: "w-4 h-4 rounded-full bg-[#4ade80] mr-2"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/IngredientMap.tsx",
-                                                            lineNumber: 851,
+                                                            lineNumber: 852,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3289,13 +3154,13 @@ const IngredientMap = ()=>{
                                                             children: "Organic Farm"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/IngredientMap.tsx",
-                                                            lineNumber: 852,
+                                                            lineNumber: 853,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/components/IngredientMap.tsx",
-                                                    lineNumber: 850,
+                                                    lineNumber: 851,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3305,7 +3170,7 @@ const IngredientMap = ()=>{
                                                             className: "w-4 h-4 rounded-full bg-[#a78bfa] mr-2"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/IngredientMap.tsx",
-                                                            lineNumber: 855,
+                                                            lineNumber: 856,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3313,13 +3178,13 @@ const IngredientMap = ()=>{
                                                             children: "Heritage Farm"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/IngredientMap.tsx",
-                                                            lineNumber: 856,
+                                                            lineNumber: 857,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/components/IngredientMap.tsx",
-                                                    lineNumber: 854,
+                                                    lineNumber: 855,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3329,7 +3194,7 @@ const IngredientMap = ()=>{
                                                             className: "w-4 h-4 rounded-full bg-[#60a5fa] mr-2"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/IngredientMap.tsx",
-                                                            lineNumber: 859,
+                                                            lineNumber: 860,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3337,13 +3202,13 @@ const IngredientMap = ()=>{
                                                             children: "Dairy Farm"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/IngredientMap.tsx",
-                                                            lineNumber: 860,
+                                                            lineNumber: 861,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/components/IngredientMap.tsx",
-                                                    lineNumber: 858,
+                                                    lineNumber: 859,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3353,7 +3218,7 @@ const IngredientMap = ()=>{
                                                             className: "w-4 h-4 rounded-full bg-[#f97316] mr-2"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/IngredientMap.tsx",
-                                                            lineNumber: 863,
+                                                            lineNumber: 864,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3361,13 +3226,13 @@ const IngredientMap = ()=>{
                                                             children: "Orchard"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/IngredientMap.tsx",
-                                                            lineNumber: 864,
+                                                            lineNumber: 865,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/components/IngredientMap.tsx",
-                                                    lineNumber: 862,
+                                                    lineNumber: 863,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3377,7 +3242,7 @@ const IngredientMap = ()=>{
                                                             className: "w-4 h-4 rounded-full bg-[#10b981] mr-2"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/IngredientMap.tsx",
-                                                            lineNumber: 867,
+                                                            lineNumber: 868,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3385,31 +3250,31 @@ const IngredientMap = ()=>{
                                                             children: "Microgreens"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/IngredientMap.tsx",
-                                                            lineNumber: 868,
+                                                            lineNumber: 869,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/components/IngredientMap.tsx",
-                                                    lineNumber: 866,
+                                                    lineNumber: 867,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/components/IngredientMap.tsx",
-                                            lineNumber: 845,
+                                            lineNumber: 846,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/components/IngredientMap.tsx",
-                                    lineNumber: 841,
+                                    lineNumber: 842,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/components/IngredientMap.tsx",
-                            lineNumber: 718,
+                            lineNumber: 719,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3437,7 +3302,7 @@ const IngredientMap = ()=>{
                                                         children: selectedFarm.name
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                                        lineNumber: 883,
+                                                        lineNumber: 884,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3448,13 +3313,13 @@ const IngredientMap = ()=>{
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                                        lineNumber: 886,
+                                                        lineNumber: 887,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                                lineNumber: 882,
+                                                lineNumber: 883,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3469,12 +3334,12 @@ const IngredientMap = ()=>{
                                                             }
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/IngredientMap.tsx",
-                                                            lineNumber: 893,
+                                                            lineNumber: 894,
                                                             columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                                        lineNumber: 892,
+                                                        lineNumber: 893,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3482,7 +3347,7 @@ const IngredientMap = ()=>{
                                                         children: selectedFarm.sustainabilityScore
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                                        lineNumber: 900,
+                                                        lineNumber: 901,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3490,13 +3355,13 @@ const IngredientMap = ()=>{
                                                         children: "/100"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                                        lineNumber: 903,
+                                                        lineNumber: 904,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                                lineNumber: 891,
+                                                lineNumber: 892,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3504,28 +3369,28 @@ const IngredientMap = ()=>{
                                                 children: selectedFarm.description
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                                lineNumber: 906,
+                                                lineNumber: 907,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(WeatherDisplay, {
                                                 farmLocation: selectedFarm.location
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                                lineNumber: 911,
+                                                lineNumber: 912,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SeasonalForecast, {
                                                 ingredients: getIngredientsForFarm(selectedFarm.id)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                                lineNumber: 914,
+                                                lineNumber: 915,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SustainabilityCalculator, {
                                                 farm: selectedFarm
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                                lineNumber: 919,
+                                                lineNumber: 920,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -3533,7 +3398,7 @@ const IngredientMap = ()=>{
                                                 children: "Sourced Ingredients"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                                lineNumber: 921,
+                                                lineNumber: 922,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3561,7 +3426,7 @@ const IngredientMap = ()=>{
                                                                         }
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                        lineNumber: 941,
+                                                                        lineNumber: 942,
                                                                         columnNumber: 31
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3572,7 +3437,7 @@ const IngredientMap = ()=>{
                                                                                 children: ingredient.name
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                                lineNumber: 951,
+                                                                                lineNumber: 952,
                                                                                 columnNumber: 33
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3582,12 +3447,12 @@ const IngredientMap = ()=>{
                                                                                         children: season
                                                                                     }, idx, false, {
                                                                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                                        lineNumber: 956,
+                                                                                        lineNumber: 957,
                                                                                         columnNumber: 37
                                                                                     }, this))
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                                lineNumber: 954,
+                                                                                lineNumber: 955,
                                                                                 columnNumber: 33
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3598,7 +3463,7 @@ const IngredientMap = ()=>{
                                                                                         children: "Nutrition Score:"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                                        lineNumber: 965,
+                                                                                        lineNumber: 966,
                                                                                         columnNumber: 35
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3610,12 +3475,12 @@ const IngredientMap = ()=>{
                                                                                             }
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                                            lineNumber: 969,
+                                                                                            lineNumber: 970,
                                                                                             columnNumber: 37
                                                                                         }, this)
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                                        lineNumber: 968,
+                                                                                        lineNumber: 969,
                                                                                         columnNumber: 35
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3623,46 +3488,46 @@ const IngredientMap = ()=>{
                                                                                         children: ingredient.nutritionScore
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                                        lineNumber: 976,
+                                                                                        lineNumber: 977,
                                                                                         columnNumber: 35
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                                lineNumber: 964,
+                                                                                lineNumber: 965,
                                                                                 columnNumber: 33
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                        lineNumber: 950,
+                                                                        lineNumber: 951,
                                                                         columnNumber: 31
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                lineNumber: 940,
+                                                                lineNumber: 941,
                                                                 columnNumber: 29
                                                             }, this)
                                                         }, ingredient.id, false, {
                                                             fileName: "[project]/app/components/IngredientMap.tsx",
-                                                            lineNumber: 928,
+                                                            lineNumber: 929,
                                                             columnNumber: 27
                                                         }, this))
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/components/IngredientMap.tsx",
-                                                    lineNumber: 925,
+                                                    lineNumber: 926,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                                lineNumber: 924,
+                                                lineNumber: 925,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                        lineNumber: 877,
+                                        lineNumber: 878,
                                         columnNumber: 17
                                     }, this),
                                     selectedIngredient && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -3685,7 +3550,7 @@ const IngredientMap = ()=>{
                                                 children: selectedIngredient.name
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                                lineNumber: 997,
+                                                lineNumber: 998,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3693,7 +3558,7 @@ const IngredientMap = ()=>{
                                                 children: selectedIngredient.description
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                                lineNumber: 1000,
+                                                lineNumber: 1001,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3706,38 +3571,38 @@ const IngredientMap = ()=>{
                                                             children: "Best seasons: "
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/IngredientMap.tsx",
-                                                            lineNumber: 1005,
+                                                            lineNumber: 1006,
                                                             columnNumber: 25
                                                         }, this),
                                                         selectedIngredient.seasonality.join(", ")
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/components/IngredientMap.tsx",
-                                                    lineNumber: 1004,
+                                                    lineNumber: 1005,
                                                     columnNumber: 23
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                                lineNumber: 1003,
+                                                lineNumber: 1004,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CookingTutorialPreview, {
                                                 ingredient: selectedIngredient
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                                lineNumber: 1011,
+                                                lineNumber: 1012,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                        lineNumber: 990,
+                                        lineNumber: 991,
                                         columnNumber: 19
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                lineNumber: 876,
+                                lineNumber: 877,
                                 columnNumber: 15
                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "h-full flex flex-col items-center justify-center text-center",
@@ -3757,17 +3622,17 @@ const IngredientMap = ()=>{
                                                 d: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                                lineNumber: 1025,
+                                                lineNumber: 1026,
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/IngredientMap.tsx",
-                                            lineNumber: 1018,
+                                            lineNumber: 1019,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                        lineNumber: 1017,
+                                        lineNumber: 1018,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -3775,7 +3640,7 @@ const IngredientMap = ()=>{
                                         children: "Explore Our Sources"
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                        lineNumber: 1033,
+                                        lineNumber: 1034,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3783,7 +3648,7 @@ const IngredientMap = ()=>{
                                         children: "Click on any farm marker on the map to learn more about our ingredients and sourcing practices."
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                        lineNumber: 1036,
+                                        lineNumber: 1037,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3797,7 +3662,7 @@ const IngredientMap = ()=>{
                                                         children: "Farm-to-Table Stats"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                                        lineNumber: 1043,
+                                                        lineNumber: 1044,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -3811,7 +3676,7 @@ const IngredientMap = ()=>{
                                                                         children: "Local Farms:"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                        lineNumber: 1048,
+                                                                        lineNumber: 1049,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3819,13 +3684,13 @@ const IngredientMap = ()=>{
                                                                         children: farms.length
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                        lineNumber: 1049,
+                                                                        lineNumber: 1050,
                                                                         columnNumber: 25
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                lineNumber: 1047,
+                                                                lineNumber: 1048,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -3836,7 +3701,7 @@ const IngredientMap = ()=>{
                                                                         children: "Avg. Distance:"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                        lineNumber: 1054,
+                                                                        lineNumber: 1055,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3848,13 +3713,13 @@ const IngredientMap = ()=>{
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                        lineNumber: 1057,
+                                                                        lineNumber: 1058,
                                                                         columnNumber: 25
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                lineNumber: 1053,
+                                                                lineNumber: 1054,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -3865,7 +3730,7 @@ const IngredientMap = ()=>{
                                                                         children: "Avg. Sustainability:"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                        lineNumber: 1068,
+                                                                        lineNumber: 1069,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3876,25 +3741,25 @@ const IngredientMap = ()=>{
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                        lineNumber: 1071,
+                                                                        lineNumber: 1072,
                                                                         columnNumber: 25
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                lineNumber: 1067,
+                                                                lineNumber: 1068,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                                        lineNumber: 1046,
+                                                        lineNumber: 1047,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                                lineNumber: 1042,
+                                                lineNumber: 1043,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3905,7 +3770,7 @@ const IngredientMap = ()=>{
                                                         children: "Environmental Impact"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                                        lineNumber: 1085,
+                                                        lineNumber: 1086,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -3919,7 +3784,7 @@ const IngredientMap = ()=>{
                                                                         children: "CO₂ Reduction:"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                        lineNumber: 1090,
+                                                                        lineNumber: 1091,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3927,13 +3792,13 @@ const IngredientMap = ()=>{
                                                                         children: "1.2 tons yearly"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                        lineNumber: 1093,
+                                                                        lineNumber: 1094,
                                                                         columnNumber: 25
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                lineNumber: 1089,
+                                                                lineNumber: 1090,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -3944,7 +3809,7 @@ const IngredientMap = ()=>{
                                                                         children: "Water Saved:"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                        lineNumber: 1098,
+                                                                        lineNumber: 1099,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3952,13 +3817,13 @@ const IngredientMap = ()=>{
                                                                         children: "24,500 gallons"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                        lineNumber: 1099,
+                                                                        lineNumber: 1100,
                                                                         columnNumber: 25
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                lineNumber: 1097,
+                                                                lineNumber: 1098,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -3969,7 +3834,7 @@ const IngredientMap = ()=>{
                                                                         children: "Land Preserved:"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                        lineNumber: 1104,
+                                                                        lineNumber: 1105,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3977,48 +3842,48 @@ const IngredientMap = ()=>{
                                                                         children: "15+ acres"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                        lineNumber: 1107,
+                                                                        lineNumber: 1108,
                                                                         columnNumber: 25
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                                                lineNumber: 1103,
+                                                                lineNumber: 1104,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                                        lineNumber: 1088,
+                                                        lineNumber: 1089,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                                lineNumber: 1084,
+                                                lineNumber: 1085,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                        lineNumber: 1041,
+                                        lineNumber: 1042,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                lineNumber: 1016,
+                                lineNumber: 1017,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/components/IngredientMap.tsx",
-                            lineNumber: 874,
+                            lineNumber: 875,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/IngredientMap.tsx",
-                    lineNumber: 717,
+                    lineNumber: 718,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4029,7 +3894,7 @@ const IngredientMap = ()=>{
                             children: "Our Sourcing Philosophy"
                         }, void 0, false, {
                             fileName: "[project]/app/components/IngredientMap.tsx",
-                            lineNumber: 1120,
+                            lineNumber: 1121,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4054,7 +3919,7 @@ const IngredientMap = ()=>{
                                                         d: "M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                                        lineNumber: 1133,
+                                                        lineNumber: 1134,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -4064,18 +3929,18 @@ const IngredientMap = ()=>{
                                                         d: "M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/IngredientMap.tsx",
-                                                        lineNumber: 1139,
+                                                        lineNumber: 1140,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                                lineNumber: 1126,
+                                                lineNumber: 1127,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/IngredientMap.tsx",
-                                            lineNumber: 1125,
+                                            lineNumber: 1126,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -4083,7 +3948,7 @@ const IngredientMap = ()=>{
                                             children: "Local First"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/IngredientMap.tsx",
-                                            lineNumber: 1147,
+                                            lineNumber: 1148,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4091,13 +3956,13 @@ const IngredientMap = ()=>{
                                             children: "We source 90% of our ingredients from within 50 miles of our restaurant, reducing food miles and supporting our local farming community."
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/IngredientMap.tsx",
-                                            lineNumber: 1150,
+                                            lineNumber: 1151,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/components/IngredientMap.tsx",
-                                    lineNumber: 1124,
+                                    lineNumber: 1125,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4118,17 +3983,17 @@ const IngredientMap = ()=>{
                                                     d: "M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/components/IngredientMap.tsx",
-                                                    lineNumber: 1166,
+                                                    lineNumber: 1167,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                                lineNumber: 1159,
+                                                lineNumber: 1160,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/IngredientMap.tsx",
-                                            lineNumber: 1158,
+                                            lineNumber: 1159,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -4136,7 +4001,7 @@ const IngredientMap = ()=>{
                                             children: "Sustainable Practices"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/IngredientMap.tsx",
-                                            lineNumber: 1174,
+                                            lineNumber: 1175,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4144,13 +4009,13 @@ const IngredientMap = ()=>{
                                             children: "We partner exclusively with farms using regenerative agriculture practices, organic methods, and responsible resource management."
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/IngredientMap.tsx",
-                                            lineNumber: 1177,
+                                            lineNumber: 1178,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/components/IngredientMap.tsx",
-                                    lineNumber: 1157,
+                                    lineNumber: 1158,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4171,17 +4036,17 @@ const IngredientMap = ()=>{
                                                     d: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/components/IngredientMap.tsx",
-                                                    lineNumber: 1192,
+                                                    lineNumber: 1193,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/IngredientMap.tsx",
-                                                lineNumber: 1185,
+                                                lineNumber: 1186,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/IngredientMap.tsx",
-                                            lineNumber: 1184,
+                                            lineNumber: 1185,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -4189,7 +4054,7 @@ const IngredientMap = ()=>{
                                             children: "Transparency"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/IngredientMap.tsx",
-                                            lineNumber: 1200,
+                                            lineNumber: 1201,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4197,36 +4062,36 @@ const IngredientMap = ()=>{
                                             children: "We provide full visibility into our supply chain, including farm practices, harvest dates, and transportation methods for each ingredient we use."
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/IngredientMap.tsx",
-                                            lineNumber: 1203,
+                                            lineNumber: 1204,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/components/IngredientMap.tsx",
-                                    lineNumber: 1183,
+                                    lineNumber: 1184,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/components/IngredientMap.tsx",
-                            lineNumber: 1123,
+                            lineNumber: 1124,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/IngredientMap.tsx",
-                    lineNumber: 1119,
+                    lineNumber: 1120,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/components/IngredientMap.tsx",
-            lineNumber: 656,
+            lineNumber: 657,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/components/IngredientMap.tsx",
-        lineNumber: 652,
+        lineNumber: 653,
         columnNumber: 5
     }, this);
 };
@@ -5370,7 +5235,7 @@ var _s = __turbopack_context__.k.signature();
 ;
 const MenuSection = ()=>{
     _s();
-    const [activeFilter, setActiveFilter] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('all');
+    const [activeFilter, setActiveFilter] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("all");
     const [dietaryFilters, setDietaryFilters] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({
         vegan: false,
         glutenFree: false,
@@ -5384,7 +5249,7 @@ const MenuSection = ()=>{
         "MenuSection.useEffect": ()=>{
             let result = __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$data$2f$menuItems$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["menuItems"];
             // Apply category filter
-            if (activeFilter !== 'all') {
+            if (activeFilter !== "all") {
                 result = result.filter({
                     "MenuSection.useEffect": (item)=>item.category.toLowerCase() === activeFilter
                 }["MenuSection.useEffect"]);
@@ -5392,17 +5257,17 @@ const MenuSection = ()=>{
             // Apply dietary filters
             if (dietaryFilters.vegan) {
                 result = result.filter({
-                    "MenuSection.useEffect": (item)=>item.tags.includes('Vegan')
+                    "MenuSection.useEffect": (item)=>item.tags.includes("Vegan")
                 }["MenuSection.useEffect"]);
             }
             if (dietaryFilters.glutenFree) {
                 result = result.filter({
-                    "MenuSection.useEffect": (item)=>item.tags.includes('Gluten-Free')
+                    "MenuSection.useEffect": (item)=>item.tags.includes("Gluten-Free")
                 }["MenuSection.useEffect"]);
             }
             if (dietaryFilters.nutFree) {
                 result = result.filter({
-                    "MenuSection.useEffect": (item)=>item.tags.includes('Nut-Free')
+                    "MenuSection.useEffect": (item)=>item.tags.includes("Nut-Free")
                 }["MenuSection.useEffect"]);
             }
             setFilteredItems(result);
@@ -5474,7 +5339,7 @@ const MenuSection = ()=>{
                             children: "Menu"
                         }, void 0, false, {
                             fileName: "[project]/app/components/MenuSection.tsx",
-                            lineNumber: 82,
+                            lineNumber: 86,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -5482,14 +5347,14 @@ const MenuSection = ()=>{
                             children: "Our Seasonal Selection"
                         }, void 0, false, {
                             fileName: "[project]/app/components/MenuSection.tsx",
-                            lineNumber: 83,
+                            lineNumber: 89,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "w-24 h-1 bg-accent mx-auto mb-6"
                         }, void 0, false, {
                             fileName: "[project]/app/components/MenuSection.tsx",
-                            lineNumber: 84,
+                            lineNumber: 92,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -5497,67 +5362,67 @@ const MenuSection = ()=>{
                             children: "Fresh, local ingredients transformed into delicious plant-based creations"
                         }, void 0, false, {
                             fileName: "[project]/app/components/MenuSection.tsx",
-                            lineNumber: 85,
+                            lineNumber: 93,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/MenuSection.tsx",
-                    lineNumber: 75,
+                    lineNumber: 79,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "flex flex-wrap justify-center mb-10 gap-2",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            className: `px-4 py-2 rounded-full text-sm font-medium transition duration-300 ${activeFilter === 'all' ? 'bg-primary text-white' : 'bg-white text-primary hover:bg-primary hover:text-white'}`,
-                            onClick: ()=>handleFilterChange('all'),
+                            className: `px-4 py-2 rounded-full text-sm font-medium transition duration-300 ${activeFilter === "all" ? "bg-primary text-white" : "bg-white text-primary hover:bg-primary hover:text-white"}`,
+                            onClick: ()=>handleFilterChange("all"),
                             children: "All Items"
                         }, void 0, false, {
                             fileName: "[project]/app/components/MenuSection.tsx",
-                            lineNumber: 90,
+                            lineNumber: 101,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            className: `px-4 py-2 rounded-full text-sm font-medium transition duration-300 ${activeFilter === 'starters' ? 'bg-primary text-white' : 'bg-white text-primary hover:bg-primary hover:text-white'}`,
-                            onClick: ()=>handleFilterChange('starters'),
+                            className: `px-4 py-2 rounded-full text-sm font-medium transition duration-300 ${activeFilter === "starters" ? "bg-primary text-white" : "bg-white text-primary hover:bg-primary hover:text-white"}`,
+                            onClick: ()=>handleFilterChange("starters"),
                             children: "Starters"
                         }, void 0, false, {
                             fileName: "[project]/app/components/MenuSection.tsx",
-                            lineNumber: 96,
+                            lineNumber: 111,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            className: `px-4 py-2 rounded-full text-sm font-medium transition duration-300 ${activeFilter === 'mains' ? 'bg-primary text-white' : 'bg-white text-primary hover:bg-primary hover:text-white'}`,
-                            onClick: ()=>handleFilterChange('mains'),
+                            className: `px-4 py-2 rounded-full text-sm font-medium transition duration-300 ${activeFilter === "mains" ? "bg-primary text-white" : "bg-white text-primary hover:bg-primary hover:text-white"}`,
+                            onClick: ()=>handleFilterChange("mains"),
                             children: "Main Courses"
                         }, void 0, false, {
                             fileName: "[project]/app/components/MenuSection.tsx",
-                            lineNumber: 102,
+                            lineNumber: 121,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            className: `px-4 py-2 rounded-full text-sm font-medium transition duration-300 ${activeFilter === 'desserts' ? 'bg-primary text-white' : 'bg-white text-primary hover:bg-primary hover:text-white'}`,
-                            onClick: ()=>handleFilterChange('desserts'),
+                            className: `px-4 py-2 rounded-full text-sm font-medium transition duration-300 ${activeFilter === "desserts" ? "bg-primary text-white" : "bg-white text-primary hover:bg-primary hover:text-white"}`,
+                            onClick: ()=>handleFilterChange("desserts"),
                             children: "Desserts"
                         }, void 0, false, {
                             fileName: "[project]/app/components/MenuSection.tsx",
-                            lineNumber: 108,
+                            lineNumber: 131,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            className: `px-4 py-2 rounded-full text-sm font-medium transition duration-300 ${activeFilter === 'drinks' ? 'bg-primary text-white' : 'bg-white text-primary hover:bg-primary hover:text-white'}`,
-                            onClick: ()=>handleFilterChange('drinks'),
+                            className: `px-4 py-2 rounded-full text-sm font-medium transition duration-300 ${activeFilter === "drinks" ? "bg-primary text-white" : "bg-white text-primary hover:bg-primary hover:text-white"}`,
+                            onClick: ()=>handleFilterChange("drinks"),
                             children: "Drinks"
                         }, void 0, false, {
                             fileName: "[project]/app/components/MenuSection.tsx",
-                            lineNumber: 114,
+                            lineNumber: 141,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/MenuSection.tsx",
-                    lineNumber: 89,
+                    lineNumber: 100,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5571,10 +5436,10 @@ const MenuSection = ()=>{
                                     className: "mr-1",
                                     id: "filter-vegan",
                                     checked: dietaryFilters.vegan,
-                                    onChange: ()=>toggleDietary('vegan')
+                                    onChange: ()=>toggleDietary("vegan")
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/MenuSection.tsx",
-                                    lineNumber: 124,
+                                    lineNumber: 155,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -5582,13 +5447,13 @@ const MenuSection = ()=>{
                                     children: "Vegan"
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/MenuSection.tsx",
-                                    lineNumber: 131,
+                                    lineNumber: 162,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/components/MenuSection.tsx",
-                            lineNumber: 123,
+                            lineNumber: 154,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -5599,10 +5464,10 @@ const MenuSection = ()=>{
                                     className: "mr-1",
                                     id: "filter-glutenfree",
                                     checked: dietaryFilters.glutenFree,
-                                    onChange: ()=>toggleDietary('glutenFree')
+                                    onChange: ()=>toggleDietary("glutenFree")
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/MenuSection.tsx",
-                                    lineNumber: 134,
+                                    lineNumber: 165,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -5610,13 +5475,13 @@ const MenuSection = ()=>{
                                     children: "Gluten-Free"
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/MenuSection.tsx",
-                                    lineNumber: 141,
+                                    lineNumber: 172,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/components/MenuSection.tsx",
-                            lineNumber: 133,
+                            lineNumber: 164,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -5627,10 +5492,10 @@ const MenuSection = ()=>{
                                     className: "mr-1",
                                     id: "filter-nutfree",
                                     checked: dietaryFilters.nutFree,
-                                    onChange: ()=>toggleDietary('nutFree')
+                                    onChange: ()=>toggleDietary("nutFree")
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/MenuSection.tsx",
-                                    lineNumber: 144,
+                                    lineNumber: 175,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -5638,19 +5503,19 @@ const MenuSection = ()=>{
                                     children: "Nut-Free"
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/MenuSection.tsx",
-                                    lineNumber: 151,
+                                    lineNumber: 182,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/components/MenuSection.tsx",
-                            lineNumber: 143,
+                            lineNumber: 174,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/MenuSection.tsx",
-                    lineNumber: 122,
+                    lineNumber: 153,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -5703,27 +5568,27 @@ const MenuSection = ()=>{
                                                 className: "w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/MenuSection.tsx",
-                                                lineNumber: 180,
+                                                lineNumber: 212,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "absolute inset-0 bg-primary opacity-0 group-hover:opacity-20 transition-opacity duration-300"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/MenuSection.tsx",
-                                                lineNumber: 185,
+                                                lineNumber: 217,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "absolute -inset-1 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-30 blur-xl group-hover:animate-shine"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/MenuSection.tsx",
-                                                lineNumber: 186,
+                                                lineNumber: 218,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/components/MenuSection.tsx",
-                                        lineNumber: 179,
+                                        lineNumber: 211,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5737,7 +5602,7 @@ const MenuSection = ()=>{
                                                         children: item.name
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/MenuSection.tsx",
-                                                        lineNumber: 190,
+                                                        lineNumber: 222,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -5748,13 +5613,13 @@ const MenuSection = ()=>{
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/components/MenuSection.tsx",
-                                                        lineNumber: 191,
+                                                        lineNumber: 225,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/components/MenuSection.tsx",
-                                                lineNumber: 189,
+                                                lineNumber: 221,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -5762,7 +5627,7 @@ const MenuSection = ()=>{
                                                 children: item.description
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/MenuSection.tsx",
-                                                lineNumber: 193,
+                                                lineNumber: 229,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5772,12 +5637,12 @@ const MenuSection = ()=>{
                                                         children: tag
                                                     }, tagIndex, false, {
                                                         fileName: "[project]/app/components/MenuSection.tsx",
-                                                        lineNumber: 196,
-                                                        columnNumber: 23
+                                                        lineNumber: 251,
+                                                        columnNumber: 25
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/MenuSection.tsx",
-                                                lineNumber: 194,
+                                                lineNumber: 232,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
@@ -5792,49 +5657,49 @@ const MenuSection = ()=>{
                                                         children: "Add to Order"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/MenuSection.tsx",
-                                                        lineNumber: 206,
+                                                        lineNumber: 265,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/MenuSection.tsx",
-                                                        lineNumber: 207,
+                                                        lineNumber: 266,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white to-transparent -translate-x-full group-hover:animate-shine"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/components/MenuSection.tsx",
-                                                        lineNumber: 208,
+                                                        lineNumber: 267,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/components/MenuSection.tsx",
-                                                lineNumber: 201,
+                                                lineNumber: 260,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/components/MenuSection.tsx",
-                                        lineNumber: 188,
+                                        lineNumber: 220,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, item.id, true, {
                                 fileName: "[project]/app/components/MenuSection.tsx",
-                                lineNumber: 165,
+                                lineNumber: 196,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/app/components/MenuSection.tsx",
-                        lineNumber: 163,
+                        lineNumber: 194,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/components/MenuSection.tsx",
-                    lineNumber: 156,
+                    lineNumber: 187,
                     columnNumber: 9
                 }, this),
                 filteredItems.length === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5844,27 +5709,27 @@ const MenuSection = ()=>{
                         children: "No items match your selected filters."
                     }, void 0, false, {
                         fileName: "[project]/app/components/MenuSection.tsx",
-                        lineNumber: 218,
+                        lineNumber: 277,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/components/MenuSection.tsx",
-                    lineNumber: 217,
+                    lineNumber: 276,
                     columnNumber: 11
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/components/MenuSection.tsx",
-            lineNumber: 74,
+            lineNumber: 78,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/components/MenuSection.tsx",
-        lineNumber: 73,
+        lineNumber: 77,
         columnNumber: 5
     }, this);
 };
-_s(MenuSection, "Fjbq5/UjevPPxNXojGgaCk8R7fE=", false, function() {
+_s(MenuSection, "KzPfM3tDZ0IElPehLU9vh4+BWXg=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useToast"]
     ];

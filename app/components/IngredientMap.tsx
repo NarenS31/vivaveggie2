@@ -8,7 +8,7 @@ import {
   Polyline,
   useMap,
 } from "react-leaflet";
-import { Icon, LatLngTuple, divIcon } from "leaflet";
+
 import "leaflet/dist/leaflet.css";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -16,6 +16,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import iconRetinaUrl from "leaflet/dist/images/marker-icon-2x.png";
 import iconUrl from "leaflet/dist/images/marker-icon.png";
 import shadowUrl from "leaflet/dist/images/marker-shadow.png";
+import { divIcon, Icon, LatLngTuple } from "leaflet";
 
 // Define farm data for the map
 interface Farm {

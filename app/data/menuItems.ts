@@ -1,4 +1,4 @@
-import { MenuItem } from "@shared/schema";
+import { MenuItem } from "../../shared/schema";
 
 export const menuItems: MenuItem[] = [
   {
