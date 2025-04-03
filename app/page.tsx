@@ -8,7 +8,6 @@ import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
 import TestimonialsSection from "./components/TestimonialsSection";
 import IngredientMap from "./components/IngredientMap";
-import VirtualTour from "./components/VirtualTour";
 import MenuSection from "./components/MenuSection";
 import TeamSection from "./components/TeamSection";
 import ProcessSection from "./components/ProcessSection";
@@ -147,7 +146,7 @@ export default function Home() {
           <OrderForm />
         </motion.div>
 
-        <motion.div
+        {/* <motion.div
           ref={ingredientMapRef}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -158,7 +157,7 @@ export default function Home() {
             Local Ingredients Map
           </h2>
           <IngredientMap />
-        </motion.div>
+        </motion.div> */}
 
         <motion.div
           initial={{ opacity: 0 }}
@@ -173,23 +172,14 @@ export default function Home() {
         </motion.div>
       </section>
 
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
       >
         <VirtualTour />
-      </motion.div>
-
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
-      >
-        <VirtualTour />
-      </motion.div>
+      </motion.div> */}
 
       {/* <motion.div
         ref={dynamicMenuRef}
